@@ -15,12 +15,12 @@ public class MainPageController {
     @FXML
     void btnLogin(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/CustomerInfoDes.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/LoginPage.fxml"));
             Parent root = loader.load();
 
-            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("CustomerInfoDescribed");
+            stage.setTitle("Login Form");
             stage.show();
 
         } catch (IOException e) {
