@@ -44,8 +44,8 @@
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Text>
-            <PasswordField layoutX="263.0" layoutY="337.0" prefHeight="10.0" prefWidth="425.0" />
-            <TextField layoutX="263.0" layoutY="250.0" prefHeight="26.0" prefWidth="425.0" />
+            <PasswordField fx:id="txtPassword" layoutX="263.0" layoutY="337.0" prefHeight="10.0" prefWidth="425.0" />
+            <TextField fx:id="txtUserName" layoutX="263.0" layoutY="250.0" prefHeight="26.0" prefWidth="425.0" />
             <Button layoutX="276.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="20.0" prefWidth="169.0" style="-fx-background-color: #6ce82e;" text="Next">
                <font>
                   <Font name="Avenir Next Condensed Heavy" size="19.0" />

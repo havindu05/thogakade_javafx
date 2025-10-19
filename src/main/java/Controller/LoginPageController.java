@@ -6,10 +6,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
 public class LoginPageController {
+
+    @FXML
+    private PasswordField txtPassword;
+
+    @FXML
+    private TextField txtUserName;
 
     @FXML
     void btnCancel(ActionEvent event) {
@@ -29,17 +39,35 @@ public class LoginPageController {
 
     @FXML
     void btnNext(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Homepage.fxml"));
-            Parent root = loader.load();
+        String name = txtUserName.getText();
+        String password = txtPassword.getText();
 
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Home Page");
-            stage.show();
+        if (name.equals("Havindu") && password.equals("1234")) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Login Successful");
+            alert.setHeaderText(null);
+            alert.setContentText("Welcome " + name + "!");
+            alert.showAndWait();
 
-        } catch (IOException e) {
-            e.printStackTrace();
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/HomePage.fxml"));
+                Parent root = loader.load();
+
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.setTitle("Home Page");
+                stage.show();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Login Failed");
+            alert.setHeaderText(null);
+            alert.setContentText("Invalid username or password!");
+            alert.showAndWait();
         }
     }
 }
