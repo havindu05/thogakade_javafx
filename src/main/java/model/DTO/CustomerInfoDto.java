@@ -1,0 +1,20 @@
+package model.DTO;
+
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class CustomerInfoDto {
+    private String CustId;
+    private String title;
+    private String name;
+    private String dob;
+    private double slaray;
+    private String address;
+    private String city;
+    private String province;
+    private String postalCode;
+}
