@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller.HomePageController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomePageController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="569.0" prefWidth="721.0" style="-fx-background-color: BLACK;">
+         <children>
+            <Text fill="#ffe100" layoutX="207.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thoga" wrappingWidth="213.26669311523438">
+               <font>
+                  <Font name="Noto Sans Kannada Black" size="66.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="399.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kade" wrappingWidth="132.26669311523438">
+               <font>
+                  <Font name="Luminari" size="54.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="469.0" fitWidth="670.0" layoutX="26.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 30%;">
+               <image>
+                  <Image url="@../Images/Unknown-40-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnCustomerManagement" prefHeight="49.0" prefWidth="321.0" style="-fx-background-color: #ffe100;" text="Customer Management">
+               <font>
+                  <Font name="Avenir Oblique" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="371.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnItemManagement" prefHeight="49.0" prefWidth="321.0" style="-fx-background-color: #ffe100;" text="Item Management">
+               <font>
+                  <Font name="Avenir Oblique" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="26.0" layoutY="387.0" mnemonicParsing="false" onAction="#btnSupplierManagemnt" prefHeight="49.0" prefWidth="321.0" style="-fx-background-color: #ffe100;" text="Supplier Management">
+               <font>
+                  <Font name="Avenir Oblique" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="371.0" layoutY="480.0" mnemonicParsing="false" onAction="#btnEmployeemanagement" prefHeight="49.0" prefWidth="321.0" style="-fx-background-color: #ffe100;" text="Employee Management">
+               <font>
+                  <Font name="Avenir Oblique" size="25.0" />
+               </font>
+            </Button>
+            <Text fill="#ffe100" layoutX="46.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-opacity: 50%;" text="From farm to table, the freshest produce in town" textAlignment="CENTER" wrappingWidth="629.2666931152344">
+               <font>
+                  <Font name="Apple Chancery" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
