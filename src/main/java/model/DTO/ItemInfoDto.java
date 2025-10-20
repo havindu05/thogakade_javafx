@@ -1,5 +1,12 @@
 package model.DTO;
 
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class ItemInfoDto {
     private String itemCode;
     private String description;
