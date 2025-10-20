@@ -31,12 +31,12 @@ public class SupplierDesController {
     @FXML
     void btnNext(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/SupplierDes.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/SupplierInfo.fxml"));
             Parent root = loader.load();
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Supplier Describe Page");
+            stage.setTitle("Supplier Infomation Page");
             stage.show();
 
         } catch (IOException e) {
