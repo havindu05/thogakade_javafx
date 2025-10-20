@@ -32,11 +32,11 @@ public class ItemDesController {
     void btnNext(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/ItemInfo.fxml"));
-            Parent root = loader.load();
+            Parent root = loader.<Parent>load();
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Item Describe Page");
+            stage.setTitle("Customer describe Page");
             stage.show();
 
         } catch (IOException e) {
