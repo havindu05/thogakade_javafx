@@ -12,7 +12,7 @@ public class CustomerInfoDto {
     private String title;
     private String name;
     private String dob;
-    private double slaray;
+    private double salaray;
     private String address;
     private String city;
     private String province;
