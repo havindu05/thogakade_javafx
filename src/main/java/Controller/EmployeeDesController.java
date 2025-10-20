@@ -31,12 +31,12 @@ public class EmployeeDesController {
     @FXML
     void btnNext(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/EmployeeDes.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/EmployeeInfo.fxml"));
             Parent root = loader.load();
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Employee Describe Page");
+            stage.setTitle("Employee Information Page");
             stage.show();
 
         } catch (IOException e) {

@@ -55,7 +55,7 @@ public class SupplierInfoController implements Initializable {
     @FXML
     private TextField txtSupplierId, txtName, txtCompanyName, txtEmail, txtPhone, txtAddress, txtCity, txtProvince, txtPostalCode;
 
-    ObservableList<SupplierInfoDTO> supplierList = FXCollections.observableArrayList(
+    ObservableList<SupplierInfoDTO> supplierInfoDTOS = FXCollections.observableArrayList(
             new SupplierInfoDTO("S0001", "Heshan Perera", "FreshSupplies", "heshan@fresh.lk", "0771234567", "No 45, Galle Road", "Colombo", "Western", "00500"),
             new SupplierInfoDTO("S0002", "Anushka Silva", "FoodMart", "anushka@foodmart.lk", "0712345678", "No 12, Main Street", "Kandy", "Central", "20000"),
             new SupplierInfoDTO("S0003", "Kavindu Fernando", "TechTrade", "kavindu@techtrade.lk", "0768765432", "45/2, Temple Road", "Galle", "Southern", "80000"),
@@ -90,7 +90,7 @@ public class SupplierInfoController implements Initializable {
         colProvince.setCellValueFactory(new PropertyValueFactory<>("province"));
         colPostalCode.setCellValueFactory(new PropertyValueFactory<>("postalCode"));
 
-        tblSupplierInfo.setItems(supplierList);
+        tblSupplierInfo.setItems(supplierInfoDTOS);
 
         tblSupplierInfo.getSelectionModel().selectedItemProperty().addListener((obs, oldVal, newVal) -> {
             if (newVal != null) {
@@ -120,7 +120,7 @@ public class SupplierInfoController implements Initializable {
                 txtProvince.getText(),
                 txtPostalCode.getText()
         );
-        supplierList.add(dto);
+        supplierInfoDTOS.add(dto);
         clearFields();
     }
 
@@ -144,7 +144,7 @@ public class SupplierInfoController implements Initializable {
     void btnDelete(ActionEvent event) {
         SupplierInfoDTO selected = tblSupplierInfo.getSelectionModel().getSelectedItem();
         if (selected != null) {
-            supplierList.remove(selected);
+            supplierInfoDTOS.remove(selected);
             clearFields();
         }
     }
