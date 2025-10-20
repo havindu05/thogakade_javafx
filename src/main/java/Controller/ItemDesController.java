@@ -36,7 +36,7 @@ public class ItemDesController {
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Customer Info Page");
+            stage.setTitle("Item Describe Page");
             stage.show();
 
         } catch (IOException e) {

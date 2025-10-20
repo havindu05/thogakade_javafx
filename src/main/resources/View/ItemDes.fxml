@@ -37,17 +37,17 @@
                   <Font name="Avenir Heavy Oblique" size="20.0" />
                </font>
             </Button>
-            <ImageView fitHeight="405.0" fitWidth="380.0" layoutX="350.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 60%;">
+            <ImageView fitHeight="357.0" fitWidth="303.0" layoutX="427.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 60%;">
                <image>
                   <Image url="@../Images/attention_please_label_important_-removebg-preview.png" />
                </image>
             </ImageView>
-            <Text fill="#ff0404" layoutX="40.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-opacity: 70%;" text="Item Information!!!">
+            <Text fill="#ff0404" layoutX="47.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-opacity: 70%;" text="Item Information!!!">
                <font>
                   <Font size="30.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="40.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please note that the information contained in this communication pertains to sensitive item-related data. Access to these details is strictly limited to authorized personnel.Any unauthorized access, sharing, modification, or distribution of this information is strictly prohibited and may lead to legal or disciplinary action.All recipients are requested to handle this information with the highest standards of data protection and confidentiality.Ensure adherence to organizational security protocols, including:Secure data storageEncrypted transmissionRestricted access based on authorization levels" wrappingWidth="401.0">
+            <Text fill="WHITE" layoutX="37.0" layoutY="204.0" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please note that the information contained in this communication pertains to sensitive item-related data. Access to these details is strictly limited to authorized personnel.Any unauthorized access, sharing, modification, or distribution of this information is strictly prohibited and may lead to legal or disciplinary action.All recipients are requested to handle this information with the highest standards of data protection and confidentiality.Ensure adherence to organizational security protocols, including:Secure data storageEncrypted transmissionRestricted access based on authorization levels" wrappingWidth="401.0">
                <font>
                   <Font size="16.0" />
                </font>
