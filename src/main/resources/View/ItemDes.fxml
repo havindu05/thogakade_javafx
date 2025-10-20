@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller.ItemDesController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ItemDesController">
+   <children>
+      <AnchorPane prefHeight="569.0" prefWidth="721.0" style="-fx-background-color: BLACK;">
+         <children>
+            <Text fill="#ffe100" layoutX="189.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thoga" wrappingWidth="213.26669311523438">
+               <font>
+                  <Font name="Noto Sans Kannada Black" size="66.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="381.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kade" wrappingWidth="132.26669311523438">
+               <font>
+                  <Font name="Luminari" size="54.0" />
+               </font>
+            </Text>
+            <Text fill="#ffe100" layoutX="216.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-opacity: 50%;" text="From farm to table, the freshest produce in town" textAlignment="CENTER" wrappingWidth="267.2666931152344">
+               <font>
+                  <Font name="Apple Chancery" size="13.0" />
+               </font>
+            </Text>
+            <Button layoutX="161.0" layoutY="502.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #64f533;" text="Next">
+               <font>
+                  <Font name="Avenir Heavy Oblique" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="16.0" layoutY="502.0" mnemonicParsing="false" onAction="#btnCancel" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #c93131;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Heavy Oblique" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="405.0" fitWidth="380.0" layoutX="350.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 60%;">
+               <image>
+                  <Image url="@../Images/attention_please_label_important_-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ff0404" layoutX="40.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-opacity: 70%;" text="Item Information!!!">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please note that the information contained in this communication pertains to sensitive item-related data. Access to these details is strictly limited to authorized personnel.Any unauthorized access, sharing, modification, or distribution of this information is strictly prohibited and may lead to legal or disciplinary action.All recipients are requested to handle this information with the highest standards of data protection and confidentiality.Ensure adherence to organizational security protocols, including:Secure data storageEncrypted transmissionRestricted access based on authorization levels" wrappingWidth="401.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
