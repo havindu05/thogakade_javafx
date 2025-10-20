@@ -23,10 +23,26 @@ import java.util.ResourceBundle;
 public class CustomerInfoController implements Initializable {
 
     ObservableList<CustomerInfoDto> customerInfoDtos = FXCollections.observableArrayList(
-            new CustomerInfoDto("C0001","Mr","Havindu","2005-04-17",150000,"Patabdimulla","Ambalangoda","Southern","80301"),
-            new CustomerInfoDto("C0002","Ms","Nethmi","2002-06-23",120000,"Panadura Road","Kalutara","Western","12000"),
-            new CustomerInfoDto("C0003","Mr","Sithum","1999-12-15",95000,"Temple Road","Galle","Southern","80000")
-
+            new CustomerInfoDto("C0001", "Mr", "Havindu", "2005-04-17", 150000, "Patabdimulla", "Ambalangoda", "Southern", "80301"),
+            new CustomerInfoDto("C0002", "Ms", "Nethmi", "2002-06-23", 120000, "Panadura Road", "Kalutara", "Western", "12000"),
+            new CustomerInfoDto("C0003", "Mr", "Sithum", "1999-12-15", 95000, "Temple Road", "Galle", "Southern", "80000"),
+            new CustomerInfoDto("C0004", "Mrs", "Ishara", "1988-03-11", 175000, "Station Road", "Colombo", "Western", "00100"),
+            new CustomerInfoDto("C0005", "Mr", "Ravindu", "2000-07-20", 82000, "Main Street", "Kandy", "Central", "20000"),
+            new CustomerInfoDto("C0006", "Ms", "Tharushi", "2003-09-18", 134000, "Beach Road", "Matara", "Southern", "81000"),
+            new CustomerInfoDto("C0007", "Mr", "Pasindu", "2001-05-22", 99000, "Temple Junction", "Negombo", "Western", "11500"),
+            new CustomerInfoDto("C0008", "Ms", "Bimsara", "1998-08-30", 145000, "Hospital Road", "Kurunegala", "North Western", "60000"),
+            new CustomerInfoDto("C0009", "Mr", "Kavindu", "1997-02-25", 112000, "Market Road", "Anuradhapura", "North Central", "50000"),
+            new CustomerInfoDto("C0010", "Mrs", "Dinithi", "1989-11-02", 168000, "Railway Avenue", "Rathnapura", "Sabaragamuwa", "70000"),
+            new CustomerInfoDto("C0011", "Mr", "Supun", "1996-04-10", 101000, "Lake Road", "Polonnaruwa", "North Central", "51000"),
+            new CustomerInfoDto("C0012", "Ms", "Mishara", "2004-01-28", 95000, "Park Lane", "Badulla", "Uva", "90000"),
+            new CustomerInfoDto("C0013", "Mr", "Chathura", "1995-10-06", 123000, "New Town", "Nuwara Eliya", "Central", "22200"),
+            new CustomerInfoDto("C0014", "Mrs", "Anushka", "1992-07-13", 176000, "College Road", "Batticaloa", "Eastern", "30000"),
+            new CustomerInfoDto("C0015", "Mr", "Heshan", "1998-12-03", 88000, "Church Street", "Trincomalee", "Eastern", "31000"),
+            new CustomerInfoDto("C0016", "Ms", "Rashmi", "2001-11-21", 132000, "Hill View", "Kegalle", "Sabaragamuwa", "71000"),
+            new CustomerInfoDto("C0017", "Mr", "Dulaj", "1999-05-09", 97000, "River Road", "Hambantota", "Southern", "82000"),
+            new CustomerInfoDto("C0018", "Ms", "Sanjula", "2002-09-27", 115000, "Court Road", "Gampaha", "Western", "11000"),
+            new CustomerInfoDto("C0019", "Mr", "Tharusha", "1994-01-15", 142000, "Bazaar Street", "Monaragala", "Uva", "91000"),
+            new CustomerInfoDto("C0020", "Mrs", "Oshini", "1991-08-08", 162000, "Rose Lane", "Jaffna", "Northern", "40000")
     );
 
     @FXML
